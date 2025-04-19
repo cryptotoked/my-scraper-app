@@ -1,10 +1,18 @@
-services:
-  - type: web
-    name: my-scraper-app
-    env: node
-    branch: main
-    plan: starter  # You can use the 'starter' plan for free
-    buildCommand: npm install && npm run build  # Install dependencies and build the app
-    startCommand: npm run start  # Start the Next.js app
-    healthCheckPath: /api/scrape  # Ensure this endpoint exists and is working
-
+preDeploy:
+  - apt-get update && apt-get install -y \
+      libnss3 \
+      libatk1.0-0 \
+      libatk-bridge2.0-0 \
+      libxcomposite1 \
+      libxdamage1 \
+      libxrandr2 \
+      libgbm1 \
+      libasound2 \
+      libpangocairo-1.0-0 \
+      libpango-1.0-0 \
+      libcairo2 \
+      libcups2 \
+      libxkbcommon0 \
+      libwayland-client0 \
+      libwayland-cursor0 \
+      libwayland-egl1
