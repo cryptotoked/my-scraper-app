@@ -1,4 +1,20 @@
-"scripts": {
-  "install": "npx playwright install",
-  "build": "npm run build"
+{
+  "name": "my-scraper-app",
+  "version": "1.0.0",
+  "description": "A web scraper using Playwright",
+  "main": "index.js",
+  "scripts": {
+    "install": "npx playwright install",
+    "build": "node build.js",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "22.14.0"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0"
+  },
+  "devDependencies": {},
+  "author": "cryptotoked",
+  "license": "ISC"
 }
