@@ -6,9 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postinstall": "npx playwright install"
+    "postinstall": "npx playwright install"  // <-- Add this line
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.4",
     "next": "^15.3.1",
     "playwright": "^1.41.0",
     "react": "^18.0.0",
