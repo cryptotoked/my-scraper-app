@@ -6,13 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postinstall": "npx playwright install",
-    "install": "npx playwright install"
+    "postinstall": "npx playwright install --with-deps",  // Install browsers with dependencies
+    "install": "npx playwright install --with-deps" // Ensure browsers are installed when running npm install
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.4",
     "next": "^15.3.1",
-    "playwright": "^1.41.0",
+    "playwright": "^1.41.0",  // Make sure Playwright is installed
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "tailwindcss": "^4.1.4"
