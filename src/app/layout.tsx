@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import { Roboto, Poppins } from "next/font/google";
 import "./globals.css";
 
-// Importing Google Fonts
+// Importing Google Fonts with specified weights
 const roboto = Roboto({
+  weight: ['400', '700'], // Added valid font weights
   variable: "--font-roboto",
   subsets: ["latin"],
 });
 
 const poppins = Poppins({
+  weight: ['400', '700'], // Added valid font weights
   variable: "--font-poppins",
   subsets: ["latin"],
 });

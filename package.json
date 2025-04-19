@@ -9,10 +9,15 @@
     "postinstall": "npx playwright install"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.4",
     "next": "^15.3.1",
     "playwright": "^1.41.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "tailwindcss": "^4.1.4",
     "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.2"
   }
 }
