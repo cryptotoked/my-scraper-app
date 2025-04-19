@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: my-scraper-app
+    env: docker
+    branch: main
+    dockerfilePath: ./Dockerfile
+    plan: starter      # free won’t let you run headful browsers, use at least starter
+    healthCheckPath: /api/scrape
+
