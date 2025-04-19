@@ -1,20 +1,43 @@
 {
   "name": "my-scraper-app",
   "version": "1.0.0",
-  "description": "A web scraper using Playwright",
-  "main": "index.js",
+  "description": "A web scraper using Playwright in a Next.js environment",
+  "private": true,
   "scripts": {
-    "install": "npx playwright install",
-    "build": "node build.js",
-    "start": "node index.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "npx playwright install",
+    "scrape": "node scripts/scrape.js"
   },
   "engines": {
     "node": "22.14.0"
   },
   "dependencies": {
-    "playwright": "^1.47.0"
+    "@playwright/test": "^1.48.1",
+    "next": "^14.2.3",
+    "playwright": "^1.52.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.16.11",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.3"
+  },
   "author": "cryptotoked",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptotoked/my-scraper-app.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/cryptotoked/my-scraper-app/issues"
+  },
+  "homepage": "https://github.com/cryptotoked/my-scraper-app#readme"
 }
+
