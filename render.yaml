@@ -1,9 +1,10 @@
 services:
   - type: web
     name: my-scraper-app
-    env: docker
+    env: node
     branch: main
-    dockerfilePath: ./Dockerfile
-    plan: starter      # free won’t let you run headful browsers, use at least starter
-    healthCheckPath: /api/scrape
+    plan: starter  # You can use the 'starter' plan for free
+    buildCommand: npm install && npm run build  # Install dependencies and build the app
+    startCommand: npm run start  # Start the Next.js app
+    healthCheckPath: /api/scrape  # Ensure this endpoint exists and is working
 
