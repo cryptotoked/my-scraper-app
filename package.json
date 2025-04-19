@@ -22,4 +22,9 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   }
+"scripts": {
+  "postinstall": "npx playwright install --with-deps",
+  "build": "next build",
+  "start": "next start"
+}
 }
